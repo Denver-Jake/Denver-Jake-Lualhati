@@ -53,21 +53,6 @@ padding-bottom: 25px;
 	font-weight: 500;
 }
 
-.container-fluid button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 15px 20px;
-            color: white;
-            background-color: black;
-            text-align: center;
-            cursor: pointer;
-          }
-          
-.container-fluid button:hover {
-            background-color: brown;
-            color: white;
-          }
 
 .bgimage {
             height:100vh;
@@ -108,6 +93,32 @@ div.image img {
           }
           
 div.desc {
-            padding: 15px;
+            padding: 50px;
             text-align: center;
           }
+		  
+.polaroid {
+  width: 20vw;
+  box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, 0.2), 0 1vw 1vw 0 rgba(0, 0, 0, 0.19);
+  font-size: 1.3vw;
+  text-align: center;
+  padding-bottom: 2vw;
+}
+.clearfix {
+  overflow: auto;
+}
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 2vw 2vw 2vw 8vw;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+	border-radius: 0.5vw;
+	padding: 2vw;
+}
